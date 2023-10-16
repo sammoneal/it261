@@ -1,0 +1,103 @@
+/* Portal Styles */
+
+body {
+  background: lavender;
+}
+
+#wrapper {
+  max-width: 1200px;
+  margin: 20px auto;
+}
+
+nav {
+  height: 60px;
+  background: lightseagreen;
+  line-height: 60px;
+  margin-bottom: 20px;
+}
+
+nav li {
+  float: left;
+  width: 16.66%;
+  text-align: center;
+  list-style-type: none;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  width: 62%;
+  float: left;
+}
+
+aside {
+  width: 35%;
+  float: right;
+}
+
+.right {
+  float: right;
+  margin-left: 30px;
+}
+
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin: 10px;
+}
+
+.mamp-img {
+  margin: 10px;
+  max-width: 80%;
+}
+
+.about-container img {
+  flex-grow: 1;
+  max-width: 40%;
+}
+
+.about-container p {
+  flex-grow: 3;
+  margin-left: 20px;
+}
+
+footer {
+  height: 60px;
+  line-height: 60px;
+  background: #ddd;
+  clear: both;
+}
+
+footer ul {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+footer li {
+  justify-content: center;
+  margin: 0 15px;
+}
+
+/* Typography */
+
+h1 {
+  text-align: center;
+  margin: 10px;
+  font-size: 3em;
+}
+
+h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+main h2,
+aside h2 {
+  text-align: left;
+}
