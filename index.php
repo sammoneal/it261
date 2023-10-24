@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/styles.css">
     <title>My Portal Page</title>
 </head>
 <body>
@@ -68,7 +68,7 @@
     </div>
     <footer>
       <ul>
-        <li>Copyright &copy 2023</li>
+        <li>Copyright &copy; 2023</li>
         <li>All Rights Reserved</li>
         <li><a href="../index.php">Web Design by Sam</a></li>
         <li><a id="html-checker" href="#">HTML Validation</a></li>

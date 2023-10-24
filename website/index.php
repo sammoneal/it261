@@ -1,29 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <title>Document</title>
-  </head>
-  <body>
-    <header>
-      <div class="inner-header">
-        <a href="index.html"
-          ><img id="logo" src="./images/logo.png" alt="logo"
-        /></a>
-        <nav>
-          <ul>
-            <li><a href="">Home</a></li>
-            <li><a href="">About</a></li>
-            <li><a href="">Daily</a></li>
-            <li><a href="">Project</a></li>
-            <li><a href="">Contact</a></li>
-            <li><a href="">Gallery</a></li>
-          </ul>
-        </nav>
-      </div>
-    </header>
+<?php
+include('./includes/header.php');
+?>
     <div id="wrapper">
       <div id="hero">
         <img src="./images/twelve.jpg" alt="Twelve is greater than three.">
@@ -40,28 +17,6 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat necessitatibus repudiandae minima facilis incidunt praesentium cumque laudantium hic blanditiis natus nesciunt maxime culpa, animi reprehenderit fuga cum ullam distinctio! Voluptatibus!</p>
       </aside>
     </div>
-    <footer>
-      <ul>
-        <li>Copyright &copy 2023</li>
-        <li>All Rights Reserved</li>
-        <li><a href="../index.php">Web Design by Sam</a></li>
-        <li><a id="html-checker" href="#">HTML Validation</a></li>
-        <li><a id="css-checker" href="#">CSS Validation</a></li>
-      </ul>
-      <script>
-        document
-          .getElementById("html-checker")
-          .setAttribute(
-            "href",
-            "https://validator.w3.org/nu/?doc=" + location.href
-          );
-        document
-          .getElementById("css-checker")
-          .setAttribute(
-            "href",
-            "https://jigsaw.w3.org/css-validator/validator?uri=" + location.href
-          );
-      </script>
-    </footer>
-  </body>
-</html>
+    <?php
+    include('./includes/footer.php');
+    ?>
