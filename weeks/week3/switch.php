@@ -8,17 +8,53 @@ if(isset($_GET['today'])){
 
 switch($today){
     case 'Sunday':
-    $title = 'html title';
-    $pic = 'pic.jpg';
-    $alt = 'alt description';
-    $content = 'body';
+        $title = 'Chamomile Tea';
+        $pic = 'pic.jpg';
+        $alt = 'alt description';
+        $content = 'body';
+        break;
     
     case 'Monday':
-    $title = 'html title';
-    $pic = 'pic.jpg';
-    $alt = 'alt description';
-    $content = 'body';
-
+        $title = 'Green Tea';
+        $pic = 'pic.jpg';
+        $alt = 'alt description';
+        $content = 'body';
+        break;
+        
+    case 'Tuesday':
+        $title = 'Peppermint Tea';
+        $pic = 'pic.jpg';
+        $alt = 'alt description';
+        $content = 'body';
+        break;
+    
+    case 'Wednesday':
+        $title = 'Earl Grey';
+        $pic = 'pic.jpg';
+        $alt = 'alt description';
+        $content = 'body';
+        break;
+    
+    case 'Thursday':
+        $title = 'Oolong Tea';
+        $pic = 'pic.jpg';
+        $alt = 'alt description';
+        $content = 'body';
+        break;
+    
+    case 'Friday':
+        $title = 'Matcha';
+        $pic = 'pic.jpg';
+        $alt = 'alt description';
+        $content = 'body';
+        break;
+    
+    case 'Saturday':
+        $title = 'Herbal Tea';
+        $pic = 'pic.jpg';
+        $alt = 'alt description';
+        $content = 'body';
+        break;
 }
 
 ?>
@@ -56,7 +92,7 @@ switch($today){
         <h2><?php echo $title; ?></h2>
         <img src="./images/<?php echo $pic; ?>" alt="<?php echo $alt; ?>">
         <p><?php echo $content; ?></p>
-        <h2>Daily Specials</h2>
+        <h2>Daily Tea Specials</h2>
         <ul>
             <li><a href="switch.php?today=Sunday">Sunday</a></li>
             <li><a href="switch.php?today=Monday">Monday</a></li>

@@ -40,8 +40,24 @@
         for ($cel = 0; $cel <= 100; $cel+=5) {
             $far = ($cel *9/5) + 32;
             echo "<tr>";
-            echo "<td>'.$cel.' degrees</td>";
-            echo "<td>'.$far.' degrees</td>";
+            echo "<td>".$cel." degrees</td>";
+            echo "<td>".$far." degrees</td>";
+            echo "</tr>";
+        }
+        ?>
+    </table>
+    <h1>Kilometer/Mile Table</h1>
+    <table>
+        <tr>
+            <th>Kilometers</th>
+            <th>Miles</th>
+        </tr>
+        <?php
+        for ($kilo = 0; $kilo <= 100; $kilo+=5) {
+            $mile = $kilo * 0.621371;
+            echo "<tr>";
+            echo "<td>".$kilo." kilometers</td>";
+            echo "<td>".number_format($mile,2)." miles</td>";
             echo "</tr>";
         }
         ?>
