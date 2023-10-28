@@ -51,7 +51,7 @@ switch($today){
   
   case 'Saturday':
       $tea = 'Herbal Tea';
-      $pic = './images/Herbal.jpeg';
+      $pic = './images/herbal.jpeg';
       $color = 'MistyRose';
       $content = 'A tea blend made from herbs, spices, and dried fruit.';
       break;

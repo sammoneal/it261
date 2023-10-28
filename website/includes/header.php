@@ -54,7 +54,7 @@ switch (THIS_PAGE) {
     <link rel="stylesheet" href="./css/style.css" />
     <title><?php echo $title; ?></title>
   </head>
-  <body class=<?php echo $body; ?>>
+  <body class="<?php echo $body; ?>">
     <header>
       <div class="inner-header">
         <a href="index.php"
