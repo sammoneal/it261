@@ -11,8 +11,8 @@
     <div id="wrapper">
         <nav>
             <ul>
-                <li><a href=""></a>Switch</li>
-                <li><a href=""></a>Troubleshoot</li>
+                <li><a href="./website/daily.php">Switch</a></li>
+                <li><a href="./adder.php">Troubleshoot</a></li>
                 <li><a href=""></a>Calculator</li>
                 <li><a href=""></a>Email</li>
                 <li><a href=""></a>Database</li>
@@ -49,7 +49,7 @@
             </ol>
             <h3>Week 4</h3>
             <ol>
-                <li><a href="./weeks/week4/celsius.php">celsius.php</a></li>
+                <li><a href="./weeks/week4/celsius.php">celcius.php</a></li>
                 <li><a href="./weeks/week4/form-arithmatic.php">form-arithmatic.php</a></li>
                 <li><a href="./weeks/week4/form1.php">form1.php</a></li>
                 <li><a href="./weeks/week4/form2.php">form2.php</a></li>
