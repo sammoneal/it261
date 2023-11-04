@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celcius Document</title>
+    <title>Celsius Document</title>
     <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
-    <h1>Celcius Converter</h1>
+    <h1>Celsius Converter</h1>
     <form action="" method="post">
         <fieldset>
-            <label>Enter Celcius Value</label>
+            <label>Enter Celsius Value</label>
             <input type="number" name="cel">
             <input type="submit" value="Convert">
         </fieldset>
@@ -23,9 +23,9 @@
             $cel_int = intval($cel);
             $far = ($cel_int * 9/5) + 32;
             if ($cel == null) {
-                echo '<p>Please provide a celcius value.</p>';
+                echo '<p>Please provide a Celsius value.</p>';
             } else {
-                echo '<p>'.$cel.' degrees celcius is '.$far.' degrees farenheit.</p>';
+                echo '<p>'.$cel.' degrees Celsius is '.$far.' degrees Fahrenheit.</p>';
             }
         }
     }
