@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: beige;
+}
+
+form {
+    width: 500px;
+    margin: 30px auto;
+}
+
+fieldset {
+    padding: 10px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type=email],
+input[type=text] {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+span {
+    display: block;
+    color: red;
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+form ul {
+    margin-left: 10px;
+    list-style-type: none;
+    margin-bottom: 7px;
+}
+
+select, textarea {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 140px;
+}
