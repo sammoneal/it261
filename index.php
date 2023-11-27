@@ -16,7 +16,7 @@
                 <li><a href=""></a>Calculator</li>
                 <li><a href=""></a>Email</li>
                 <li><a href=""></a>Database</li>
-                <li><a href=""></a>Gallery</li>
+                <li><a href="./website/gallery.php"></a>Gallery</li>
             </ul>
         </nav>
 

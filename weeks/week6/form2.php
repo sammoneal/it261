@@ -153,19 +153,19 @@ if(isset($_POST['first_name'],
             <ul>
                 <li><input type="checkbox" name="wines[]" value="cab" <?php 
                     if (isset($_POST['wines']) && in_array('cab', $wines)) echo 'checked="checked"';
-                    ?>>Cabernet<</li>
+                    ?>>Cabernet</li>
                 <li><input type="checkbox" name="wines[]" value="merlot" <?php 
                     if (isset($_POST['wines']) && in_array('merlot', $wines)) echo 'checked="checked"';
-                    ?>>Merlot<</li>
+                    ?>>Merlot</li>
                 <li><input type="checkbox" name="wines[]" value="syrah" <?php 
                     if (isset($_POST['wines']) && in_array('syrah', $wines)) echo 'checked="checked"';
-                    ?>>Syrah<</li>
+                    ?>>Syrah</li>
                 <li><input type="checkbox" name="wines[]" value="malbec" <?php 
                     if (isset($_POST['wines']) && in_array('malbec', $wines)) echo 'checked="checked"';
-                    ?>>Malbec<</li>
+                    ?>>Malbec</li>
                 <li><input type="checkbox" name="wines[]" value="red" <?php 
                     if (isset($_POST['wines']) && in_array('red', $wines)) echo 'checked="checked"';
-                    ?>>Red Blend<</li>
+                    ?>>Red Blend</li>
             </ul>
             <span><?php echo $wines_err ?></span>
             <label>Regions</label>
