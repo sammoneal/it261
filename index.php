@@ -13,10 +13,10 @@
             <ul>
                 <li><a href="./website/daily.php">Switch</a></li>
                 <li><a href="./adder.php">Troubleshoot</a></li>
-                <li><a href=""></a>Calculator</li>
-                <li><a href=""></a>Email</li>
-                <li><a href=""></a>Database</li>
-                <li><a href="./website/gallery.php"></a>Gallery</li>
+                <li><a href="./calculator.php">Calculator</a></li>
+                <li><a href="">Email</a></li>
+                <li><a href="">Database</a></li>
+                <li><a href="./website/gallery.php">Gallery</a></li>
             </ul>
         </nav>
 
@@ -61,7 +61,6 @@
                 <li><a href="./weeks/week5/currency2.php">currency2.php</a></li>
                 <li><a href="./weeks/week5/currency3.php">currency3.php</a></li>
                 <li><a href="./weeks/week5/currency4.php">currency4.php</a></li>
-                <li><a href="./weeks/week5/null.php">null.php</a></li>
             </ol>
             <h3>Week 6</h3>
             <ol>
