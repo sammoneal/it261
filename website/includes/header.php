@@ -18,8 +18,8 @@ switch (THIS_PAGE) {
     $body = 'daily inner';
     break;
   
-  case 'project.php':
-    $title = 'Project page of our Website Project';
+  case 'movies.php':
+    $title = 'Database page of our Website Project';
     $body = 'project inner';
     break;
   
@@ -32,6 +32,11 @@ switch (THIS_PAGE) {
     $title = 'Gallery page of our Website Project';
     $body = 'gallery inner';
     break;
+
+    case 'view.php':
+    $title = 'Details page of our Website Project';
+    $body = 'view inner';
+    break;
   
   }
 
@@ -39,7 +44,7 @@ switch (THIS_PAGE) {
     'index.php' => 'Home',
     'about.php' => 'About',
     'daily.php' => 'Daily',
-    'project.php' => 'Project',
+    'movies.php' => 'Movies',
     'contact.php' => 'Contact',
     'gallery.php' => 'Gallery',
   );

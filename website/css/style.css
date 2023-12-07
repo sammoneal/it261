@@ -55,6 +55,7 @@ nav a {
 
 main {
   width: 62%;
+  padding: 10px;
   background: lightblue;
   float: left;
 }
@@ -144,4 +145,33 @@ td {
 
 td img {
   max-width: 200px;
+}
+
+/* Project */
+
+.section-title{
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.movie-container{
+  padding-bottom: 20px;
+}
+
+.detail-container{
+  padding-left: 20px;
+}
+
+.detail-container ul{
+  list-style-type: none;
+}
+
+.title{
+  text-transform: uppercase;
+}
+
+.key {
+  text-transform: uppercase;
+  color: gray;
+  font-size: medium;
 }
