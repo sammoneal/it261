@@ -19,7 +19,7 @@ include('server.php');
                 <label>Password</label>
                 <input type="password" name="password" value="<?php if(isset($_POST['password'])) echo htmlspecialchars($_POST['password'])?>">
                 <button type="submit" name="login_user" class="btn">Log In</button>
-                <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>">Clear</button>
+                <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ?>'">Clear</button>
             </form>
             <?php include('errors.php'); ?>
         </div>

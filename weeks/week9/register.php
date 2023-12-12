@@ -28,7 +28,7 @@ include('server.php');
                 <label>Confirm Password</label>
                 <input type="password" name="confirm_password" value="<?php if(isset($_POST['confirm_password'])) echo htmlspecialchars($_POST['confirm_password']); ?>">
                 <button type="submit" name="reg_user" class="btn">Register</button>
-                <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>">Clear</button>
+                <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']); ?>'">Clear</button>
             </form>
             <?php include('errors.php'); ?>
         </div>
