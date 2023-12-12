@@ -1,0 +1,23 @@
+.page-container{
+    margin-left: 50px;
+}
+.form-container{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border: 2px solid black;
+    width: 300px;
+    height: auto;
+    align-items: flex-start;
+}
+.form-container label,input,button{
+    flex: 1;
+    display: block;
+    margin-bottom: 10px;
+}
+.form-container label{
+    width: 200px;
+}
+.errors{
+    color: darkred;
+}
