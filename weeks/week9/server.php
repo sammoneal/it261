@@ -47,7 +47,7 @@ if(isset($_POST['reg_user'])){
         if($rows['username'] == $username){
             array_push($errors, 'Username already exists.');
         }
-        if($rows['email'] == $username){
+        if($rows['email'] == $email){
             array_push($errors, 'Email already registered.');
         }
     }
