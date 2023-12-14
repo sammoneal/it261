@@ -11,64 +11,64 @@ if(isset($_GET['today'])){
 
 switch($today){
   case 'Sunday':
-      $tea = 'Chamomile Tea';
-      $pic = './images/chamomile.jpeg';
+      $tea = 'Saurian Brandy';
+      $pic = './images/switch/7.jpeg';
       $color = 'HoneyDew';
-      $content = 'A calming tea made from the Chamomile flower.';
+      $content = 'No Federation credits.';
       break;
   
   case 'Monday':
-      $tea = 'Green Tea';
-      $pic = './images/green.jpeg';
+      $tea = 'Raktajino';
+      $pic = './images/switch/1.jpeg';
       $color = 'Chartreuse';
-      $content = 'An earthy tea with a small amount of caffeine.';
+      $content = 'TABS DUE MONDAY';
       break;
       
   case 'Tuesday':
-      $tea = 'Peppermint Tea';
-      $pic = './images/chamomile.jpeg';
+      $tea = 'Bloodwine';
+      $pic = './images/switch/2.jpeg';
       $color = 'lightgreen';
-      $content = 'A refreshing tea made from peppermint leaves.';
+      $content = 'Customers will be charged for damages.';
       break;
   
   case 'Wednesday':
-      $tea = 'Earl Grey';
-      $pic = './images/earl.webp';
+      $tea = 'Kanar';
+      $pic = './images/switch/3.jpeg';
       $color = 'Tan';
-      $content = 'Black tea flavored with bergamont oil.';
+      $content = 'All other items full price!';
       break;
   
   case 'Thursday':
-      $tea = 'Oolong Tea';
-      $pic = './images/oolong.webp';
+      $tea = 'Romulan Ale';
+      $pic = './images/switch/4.jpeg';
       $color = 'Thistle';
-      $content = 'A complex tea made from partially fermented tea leaves.';
+      $content = 'Compliant with all import restrictions.';
       break;
   
   case 'Friday':
-      $tea = 'Matcha';
-      $pic = './images/matcha.webp';
+      $tea = 'Synthehol';
+      $pic = './images/switch/5.jpeg';
       $color = 'SpringGreen';
-      $content = 'Green tea made from matcha powder.';
+      $content = 'No free refills, no special orders.';
       break;
   
   case 'Saturday':
-      $tea = 'Herbal Tea';
-      $pic = './images/herbal.jpeg';
+      $tea = 'Prune Juice';
+      $pic = './images/switch/6.jpeg';
       $color = 'MistyRose';
-      $content = 'A tea blend made from herbs, spices, and dried fruit.';
+      $content = 'For warriors.';
       break;
 }
 
 ?>
     <div id="wrapper">
       <main style="background:<?php echo $color; ?>">
-        <h1><?php echo $today.' is '.$tea; ?></h1>
+        <h1><?php echo '10% off '.$tea.' on '.$today; ?></h1>
         <img src="<?php echo $pic; ?>" alt="<?php echo $tea.' image.'; ?>">
         <p><?php echo $content; ?></p>
       </main>
       <aside>
-        <h3>Daily Tea Specials</h3>
+        <h3>Quark's Drink Specials</h3>
         <ul style="list-style-type:none; margin-left:20px">
             <li><a href="daily.php?today=Sunday">Sunday</a></li>
             <li><a href="daily.php?today=Monday">Monday</a></li>
