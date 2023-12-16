@@ -9,8 +9,8 @@ $last_name = '';
 $email= '';
 $gender= '';
 $phone= '';
-$wines = '';
-$regions= '';
+$series = '';
+$captain= '';
 $comments = '';
 $privacy = '';
 
@@ -19,8 +19,8 @@ $last_name_err = '';
 $email_err = '';
 $gender_err = '';
 $phone_err = '';
-$wines_err = '';
-$regions_err = '';
+$series_err = '';
+$captain_err = '';
 $comments_err = '';
 $privacy_err = '';
 
@@ -50,15 +50,15 @@ if($_SERVER['REQUEST_METHOD'] == "POST") {
     } else {
         $phone = $_POST['phone'];
     }
-    if(empty($_POST["wines"])) {
-        $wines_err = "What, no wines?";
+    if(empty($_POST["series"])) {
+        $series_err = "What, no series?";
     } else {
-        $wines = $_POST['wines'];
+        $series = $_POST['series'];
     }
-    if(empty($_POST["regions"])) {
-        $regions_err = "Please enter a value";
+    if(empty($_POST["captain"])) {
+        $captain_err = "Please enter a value";
     } else {
-        $regions = $_POST['regions'];
+        $captain = $_POST['captain'];
     }
     if(empty($_POST["comments"])) {
         $comments_err = "Please enter a value";
@@ -77,8 +77,8 @@ if(isset($_POST['first_name'],
     $_POST['email'],
     $_POST['gender'],
     $_POST['phone'],
-    $_POST['wines'],
-    $_POST['regions'],
+    $_POST['series'],
+    $_POST['captain'],
     $_POST['comments'],
     $_POST['privacy'])) {
         $to = 'sam.oneal@gmail.com';
@@ -89,8 +89,8 @@ if(isset($_POST['first_name'],
         Email: '.$email.' '.PHP_EOL.'
         Gender: '.$gender.' '.PHP_EOL.'
         Phone: '.$phone.' '.PHP_EOL.'
-        Wines: '.$wines.' '.PHP_EOL.'
-        Regions: '.$regions.' '.PHP_EOL.'
+        series: '.$series.' '.PHP_EOL.'
+        captain: '.$captain.' '.PHP_EOL.'
         Comments: '.$comments.' '.PHP_EOL.'
         Privacy: '.$privacy.' '.PHP_EOL.'
         ';
@@ -99,7 +99,7 @@ if(isset($_POST['first_name'],
             'From' => 'noreply@samoneal.net'
         );
     
-    if(!empty($first_name && $last_name && $email && $gender && $wines && $regions && $phone && $comments)) {
+    if(!empty($first_name && $last_name && $email && $gender && $series && $captain && $phone && $comments)) {
         mail($to, $subject, $body, $headers);
         header('Location:thx.php');
     }
@@ -111,7 +111,7 @@ if(isset($_POST['first_name'],
     <h1>Contact Form</h1>
     <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
         <fieldset>
-            <legend>Contact Sam</legend>
+            <legend>Contact TrekFans</legend>
             <label>First Name</label>
             <input type="text" name="first_name" value="<?php 
                 if (isset($_POST["first_name"])) echo htmlspecialchars($_POST['first_name']); 
@@ -145,47 +145,44 @@ if(isset($_POST['first_name'],
                 if (isset($_POST["phone"])) echo htmlspecialchars($_POST['phone']); 
                 ?>">
             <span><?php echo $phone_err ?></span>
-            <label>Favorite Wines</label>
+            <label>Prefered Series</label>
             <ul>
-                <li><input type="checkbox" name="wines[]" value="cab" <?php 
-                    if (isset($_POST['wines']) && in_array('cab', $wines)) echo 'checked="checked"';
-                    ?>>Cabernet</li>
-                <li><input type="checkbox" name="wines[]" value="merlot" <?php 
-                    if (isset($_POST['wines']) && in_array('merlot', $wines)) echo 'checked="checked"';
-                    ?>>Merlot</li>
-                <li><input type="checkbox" name="wines[]" value="syrah" <?php 
-                    if (isset($_POST['wines']) && in_array('syrah', $wines)) echo 'checked="checked"';
-                    ?>>Syrah</li>
-                <li><input type="checkbox" name="wines[]" value="malbec" <?php 
-                    if (isset($_POST['wines']) && in_array('malbec', $wines)) echo 'checked="checked"';
-                    ?>>Malbec</li>
-                <li><input type="checkbox" name="wines[]" value="red" <?php 
-                    if (isset($_POST['wines']) && in_array('red', $wines)) echo 'checked="checked"';
-                    ?>>Red Blend</li>
+                <li><input type="checkbox" name="series[]" value="tos" <?php 
+                    if (isset($_POST['series']) && in_array('tos', $series)) echo 'checked="checked"';
+                    ?>>The Original Series</li>
+                <li><input type="checkbox" name="series[]" value="merlot" <?php 
+                    if (isset($_POST['series']) && in_array('merlot', $series)) echo 'checked="checked"';
+                    ?>>The Animated Series</li>
+                <li><input type="checkbox" name="series[]" value="syrah" <?php 
+                    if (isset($_POST['series']) && in_array('syrah', $series)) echo 'checked="checked"';
+                    ?>>The Next Generation</li>
+                <li><input type="checkbox" name="series[]" value="malbec" <?php 
+                    if (isset($_POST['series']) && in_array('malbec', $series)) echo 'checked="checked"';
+                    ?>>Deep Space 9</li>
+                <li><input type="checkbox" name="series[]" value="red" <?php 
+                    if (isset($_POST['series']) && in_array('red', $series)) echo 'checked="checked"';
+                    ?>>Voyager</li>
             </ul>
-            <span><?php echo $wines_err ?></span>
-            <label>Regions</label>
-            <select name="regions">
+            <span><?php echo $series_err ?></span>
+            <label>Best Captain</label>
+            <select name="captain">
                 <option value="" <?php 
-                    if (isset($_POST['regions']) && is_null($_POST['regions'])) echo 'selected="unselected"';
-                    ?>>Select a Region</option>
+                    if (isset($_POST['captain']) && is_null($_POST['captain'])) echo 'selected="unselected"';
+                    ?>>Select a Captain</option>
                 <option value="nw" <?php 
-                    if (isset($_POST['regions']) && $_POST['regions'] == 'nw') echo 'selected="unselected"';
-                    ?>>Northwest</option>
+                    if (isset($_POST['captain']) && $_POST['captain'] == 'nw') echo 'selected="unselected"';
+                    ?>>Kirk</option>
                 <option value="sw" <?php 
-                    if (isset($_POST['regions']) && $_POST['regions'] == 'sw') echo 'selected="unselected"';
-                    ?>>Southwest</option>
+                    if (isset($_POST['captain']) && $_POST['captain'] == 'sw') echo 'selected="unselected"';
+                    ?>>Picard</option>
                 <option value="mw" <?php 
-                    if (isset($_POST['regions']) && $_POST['regions'] == 'mw') echo 'selected="unselected"';
-                    ?>>Midwest</option>
+                    if (isset($_POST['captain']) && $_POST['captain'] == 'mw') echo 'selected="unselected"';
+                    ?>>Sisko</option>
                 <option value="ne" <?php 
-                    if (isset($_POST['regions']) && $_POST['regions'] == 'ne') echo 'selected="unselected"';
-                    ?>>Northweast</option>
-                <option value="se" <?php 
-                    if (isset($_POST['regions']) && $_POST['regions'] == 'se') echo 'selected="unselected"';
-                    ?>>Southeast</option>
+                    if (isset($_POST['captain']) && $_POST['captain'] == 'ne') echo 'selected="unselected"';
+                    ?>>Janeway</option>
             </select>
-            <span><?php echo $regions_err ?></span>
+            <span><?php echo $captain_err ?></span>
             <label>Comments</label>
             <textarea name="comments"><?php 
                 if (isset($_POST["comments"])) echo htmlspecialchars($_POST['comments']); 

@@ -69,7 +69,7 @@ switch (THIS_PAGE) {
         <a href="index.php"
           ><img id="logo" src="./images/logo.png" alt="logo"
         /></a>
-        <p class="greeting"><?php if(isset($username)){ echo "Service Record: {$rank} {$last_name}"; }; ?></p>
+        <p class="greeting"><?php if(isset($username) && isset($rank) && isset($last_name)){ echo "Service Record: {$rank} {$last_name}"; }; ?></p>
         <nav>
           <ul>
             <?php
